@@ -26,7 +26,6 @@
         <img src="https://img.shields.io/github/license/ZeroEthical/Joker?style=flat-square" alt="GitHub License">
       </a>
     </td>
-    <td align="center">
   </tr>
 </table>
 
