@@ -1,7 +1,7 @@
 # 💣 Joker: Desata el Caos (y la Seguridad) con este Poderoso DDoS Tool 😈🛡️
 
-[![GitHub Issues](https://img.shields.io/github/issues/TU_USUARIO/Joker?style=flat-square)](https://github.com/TU_USUARIO/Joker/issues)
-[![GitHub Stars](https://img.shields.io/github/stars/TU_USUARIO/Joker?style=flat-square)](https://github.com/TU_USUARIO/Joker/stargazers)
+[![GitHub Issues](https://img.shields.io/github/issues/ZeroEthical/Joker?style=flat-square)](https://github.com/ZeroEthical/Joker/issues)
+[![GitHub Stars](https://img.shields.io/github/stars/ZeroEthical/Joker?style=flat-square)](https://github.com/ZeroEthical/Joker/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/TU_USUARIO/Joker?style=flat-square)](https://github.com/TU_USUARIO/Joker/network/members)
 [![GitHub License](https://img.shields.io/github/license/TU_USUARIO/Joker?style=flat-square)](LICENSE)
 [![Node.js CI](https://github.com/TU_USUARIO/Joker/actions/workflows/node.js.yml/badge.svg)](https://github.com/TU_USUARIO/Joker/actions/workflows/node.js.yml)
@@ -54,4 +54,4 @@
 ## 📝 Uso
 
 ```bash
-node joker.js [ip] [tiempo] [velocidad] [threads] [archivo_proxies]```
+node joker.js [ip] [tiempo] [velocidad] [threads] [archivo_proxies]
