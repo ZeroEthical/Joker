@@ -1,7 +1,7 @@
 # 💣 Joker: Desata el Caos (y la Seguridad) con este Poderoso DDoS Tool 😈🛡️
 
 <div align="center">
-  <img src="https://github.com/ZeroEthical/Joker/blob/main/image.jpg" alt="ZeroEthical" width="600">
+  <img src="https://github.com/ZeroEthical/Joker/blob/main/image.jpg" alt="ZeroEthical" width="500">
 </div>
 
 <div align="center">
