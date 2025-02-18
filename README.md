@@ -4,12 +4,6 @@
 <img src="https://github.com/ZeroEthical/Joker/blob/main/image.jpg" alt="ZeroEthical" width="600">
 </div>
 
-<p align="center">
-[![GitHub Issues](https://img.shields.io/github/issues/ZeroEthical/Joker?style=flat-square)](https://github.com/ZeroEthical/Joker/issues)
-[![GitHub Stars](https://img.shields.io/github/stars/ZeroEthical/Joker?style=flat-square)](https://github.com/ZeroEthical/Joker/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/ZeroEthical/Joker?style=flat-square)](https://github.com/ZeroEthical/Joker/network/members)
-[![GitHub License](https://img.shields.io/github/license/ZeroEthical/Joker?style=flat-square)](LICENSE)
-</p>
 
 ## 💥 ¡Advertencia! 💥
 
@@ -18,6 +12,13 @@
 ## 🎭 Descripción General
 
 **Joker** es una herramienta de pruebas de estrés (DDoS) avanzada, diseñada para evaluar la resiliencia de sistemas y redes ante ataques de denegación de servicio. Está escrita en **Node.js** y es una herramienta poderosa, ideal para equipos de seguridad, investigadores y desarrolladores que buscan comprender y mitigar los riesgos asociados con los ataques DDoS.
+
+<p align="center">
+[![GitHub Issues](https://img.shields.io/github/issues/ZeroEthical/Joker?style=flat-square)](https://github.com/ZeroEthical/Joker/issues)
+[![GitHub Stars](https://img.shields.io/github/stars/ZeroEthical/Joker?style=flat-square)](https://github.com/ZeroEthical/Joker/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/ZeroEthical/Joker?style=flat-square)](https://github.com/ZeroEthical/Joker/network/members)
+[![GitHub License](https://img.shields.io/github/license/ZeroEthical/Joker?style=flat-square)](LICENSE)
+</p>
 
 **Características Clave:**
 
