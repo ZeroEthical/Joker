@@ -1,33 +1,10 @@
 # 💣 Joker: Desata el Caos (y la Seguridad) con este Poderoso DDoS Tool 😈🛡️
 
 <div align="center">
-<img src="https://github.com/ZeroEthical/Joker/blob/main/image.jpg" alt="ZeroEthical" width="600">
-</div>
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/ZeroEthical/Joker/issues">
-        <img src="https://img.shields.io/github/issues/ZeroEthical/Joker?style=flat-square" alt="GitHub Issues">
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/TU_USUARIO/Joker/stargazers">
-        <img src="https://img.shields.io/github/stars/ZeroEthical/Joker?style=flat-square" alt="GitHub Stars">
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/ZeroEthical/Joker/network/members">
-        <img src="https://img.shields.io/github/forks/ZeroEthical/Joker?style=flat-square" alt="GitHub Forks">
-      </a>
-    </td>
-    <td align="center">
-      <a href="LICENSE">
-        <img src="https://img.shields.io/github/license/ZeroEthical/Joker?style=flat-square" alt="GitHub License">
-      </a>
-    </td>
-  </tr>
-</table>
+    <a href="https://github.com/ZeroEthical/Joker/issues"><img align="center" src="https://img.shields.io/github/issues/ZeroEthical/Joker?style=flat-square" alt="GitHub Issues"></a>
+    <a href="https://github.com/ZeroEthical/Joker/stargazers"><img align="center" src="https://img.shields.io/github/stars/ZeroEthical/Joker?style=flat-square" alt="GitHub Stars"></a>
+    <a href="https://github.com/ZeroEthical/Joker/network/members"><img align="center" src="https://img.shields.io/github/forks/ZeroEthical/Joker?style=flat-square" alt="GitHub Forks"></a>
+    <a href="LICENSE"><img 
 
 ## 💥 ¡Advertencia! 💥
 
