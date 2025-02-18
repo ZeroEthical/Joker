@@ -59,18 +59,27 @@ node joker.js [ip] [tiempo] [velocidad] [threads] [archivo_proxies]
 
 **Parámetros:**
 
-[ip]: La dirección URL del sitio web de destino (ej., https://ejemplo.com). 🎯
+*  [ip]: La dirección URL del sitio web de destino (ej., https://ejemplo.com). 🎯
 
-[tiempo]: La duración del ataque en segundos. ⏳
+*  [tiempo]: La duración del ataque en segundos. ⏳
 
-[velocidad]: Cantidad de paquetes por segundo (Rate). 🚀
+*  [velocidad]: Cantidad de paquetes por segundo (Rate). 🚀
 
-[threads]: El número de hilos a utilizar. 🧵
+*  [threads]: El número de hilos a utilizar. 🧵
 
-[archivo_proxies]: La ruta al archivo de texto que contiene una lista de proxies. 🛡️
+*  [archivo_proxies]: La ruta al archivo de texto que contiene una lista de proxies. 🛡️
 
 ***Ejemplo:***
 
 ```
 node joker.js https://ejemplo.com 60 5000 100 proxies.txt
 ```
+  Esto iniciará un ataque DDoS al sitio web https://ejemplo.com durante 60 segundos, utilizando 100 hilos y enviando 5000 paquetes por segundo, a través de los proxies listados en proxies.txt.
+
+## ⚠️ Importante sobre el archivo de proxies ⚠️
+
+*  El archivo proxies.txt debe contener una lista de proxies, uno por línea, en el formato ip:puerto.
+
+*  Utiliza proxies anónimos y de alta calidad para evitar revelar tu dirección IP real y maximizar la efectividad del ataque.
+
+*  Advertencia: El uso de proxies puede implicar riesgos legales y de privacidad. Utiliza esta función con precaución.
