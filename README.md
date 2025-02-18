@@ -55,3 +55,22 @@
 
 ```bash
 node joker.js [ip] [tiempo] [velocidad] [threads] [archivo_proxies]
+```
+
+**Parámetros:**
+
+[ip]: La dirección URL del sitio web de destino (ej., https://ejemplo.com). 🎯
+
+[tiempo]: La duración del ataque en segundos. ⏳
+
+[velocidad]: Cantidad de paquetes por segundo (Rate). 🚀
+
+[threads]: El número de hilos a utilizar. 🧵
+
+[archivo_proxies]: La ruta al archivo de texto que contiene una lista de proxies. 🛡️
+
+***Ejemplo:***
+
+```
+node joker.js https://ejemplo.com 60 5000 100 proxies.txt
+```
