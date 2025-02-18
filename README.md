@@ -9,7 +9,8 @@
     <a href="https://github.com/ZeroEthical/Joker/stargazers"><img align="center" src="https://img.shields.io/github/stars/ZeroEthical/Joker?style=flat-square" alt="GitHub Stars"></a>
     <a href="https://github.com/ZeroEthical/Joker/network/members"><img align="center" src="https://img.shields.io/github/forks/ZeroEthical/Joker?style=flat-square" alt="GitHub Forks"></a>
     <a href="LICENSE"><img align="center" src="https://img.shields.io/github/license/ZeroEthical/Joker?style=flat-square" alt="GitHub License"></a>
-    
+</div>
+
 ## 💥 ¡Advertencia! 💥
 
 **Este código se proporciona SÓLO con fines educativos y de pruebas de seguridad. El uso de este código para atacar sistemas sin autorización es ILEGAL y ÉTICAMENTE INACEPTABLE. El autor no se hace responsable de ningún uso indebido.**
