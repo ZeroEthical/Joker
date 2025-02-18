@@ -3,7 +3,7 @@
 [![GitHub Issues](https://img.shields.io/github/issues/ZeroEthical/Joker?style=flat-square)](https://github.com/ZeroEthical/Joker/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/ZeroEthical/Joker?style=flat-square)](https://github.com/ZeroEthical/Joker/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/ZeroEthical/Joker?style=flat-square)](https://github.com/ZeroEthical/Joker/network/members)
-[![GitHub License](https://img.shields.io/github/license/TU_USUARIO/Joker?style=flat-square)](LICENSE)
+[![GitHub License](https://img.shields.io/github/license/ZeroEthical/Joker?style=flat-square)](LICENSE)
 [![Node.js CI](https://github.com/ZeroEthical/Joker/actions/workflows/node.js.yml/badge.svg)](https://github.com/ZeroEthical/Joker/actions/workflows/node.js.yml)
 
 ## 💥 ¡Advertencia! 💥
