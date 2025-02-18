@@ -1,10 +1,13 @@
 # 💣 Joker: Desata el Caos (y la Seguridad) con este Poderoso DDoS Tool 😈🛡️
+<div align="center">
+<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Logo de Google" width="200">
+</div>
 
 [![GitHub Issues](https://img.shields.io/github/issues/ZeroEthical/Joker?style=flat-square)](https://github.com/ZeroEthical/Joker/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/ZeroEthical/Joker?style=flat-square)](https://github.com/ZeroEthical/Joker/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/ZeroEthical/Joker?style=flat-square)](https://github.com/ZeroEthical/Joker/network/members)
 [![GitHub License](https://img.shields.io/github/license/ZeroEthical/Joker?style=flat-square)](LICENSE)
-[![Node.js CI](https://github.com/ZeroEthical/Joker/actions/workflows/node.js.yml/badge.svg)](https://github.com/ZeroEthical/Joker/actions/workflows/node.js.yml)
+
 
 ## 💥 ¡Advertencia! 💥
 
