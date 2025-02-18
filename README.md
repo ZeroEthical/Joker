@@ -83,3 +83,37 @@ node joker.js https://ejemplo.com 60 5000 100 proxies.txt
 *  Utiliza proxies anónimos y de alta calidad para evitar revelar tu dirección IP real y maximizar la efectividad del ataque.
 
 *  Advertencia: El uso de proxies puede implicar riesgos legales y de privacidad. Utiliza esta función con precaución.
+
+## 🛡️ Limitaciones de responsabilidad
+  El uso de este software es **bajo su propio riesgo**. El autor no se hace responsable de:
+
+*  Cualquier daño causado a sistemas o redes atacadas.
+
+*  Cualquier consecuencia legal derivada del uso indebido del software.
+
+*  La efectividad del ataque, que puede variar según la infraestructura del objetivo y las defensas implementadas.
+
+## ✨ Próximas Mejoras (¡Contribuciones Bienvenidas!) ✨
+*  **Integración de más métodos de ataque:** Ampliar el arsenal con SYN Flood, UDP Flood, etc. 💣
+
+*  **Soporte para protocolos SOCKS4 y SOCKS5:** Más opciones para el anonimato. 🧅
+
+*  **Interfaz de usuario:** Para una experiencia más amigable. 💻
+
+*  **Configuración avanzada:** Permitir una mayor personalización de los parámetros del ataque. ⚙️
+
+*  **Interfaz GUI:** Interfaz Gráfica intuitiva para gestionar los ataques más facilmente
+
+
+## 🤝 Contribuciones
+***¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar Joker, siéntete libre de crear un "pull request".***
+
+## 📝 Licencia
+*  ***Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para obtener más detalles.***
+
+## ¿Te gustó? ☕ ¡Invítame un café!
+***Si este repositorio te ha sido útil, ¡considera invitarme a un café!***
+
+**🪙 BTC:** 1P9vFv4oWvz3Lp75QiBXWNtSudZ1FnBZNG 
+
+**TELEGRAM: @ZeroEthical**
