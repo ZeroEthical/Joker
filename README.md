@@ -1,5 +1,11 @@
 # 💣 Joker: Desata el Caos (y la Seguridad) con este Poderoso DDoS Tool 😈🛡️
 
+<h2 align="center">
+    ──「 JOKER 」──
+</h2>
+
+
+
 <div align="center">
   <img src="https://github.com/ZeroEthical/Joker/blob/main/image.jpg" alt="ZeroEthical" width="450">
 </div>
@@ -53,15 +59,15 @@ La sintaxis es simple, pero el potencial es ENORME:
 ```bash
 node joker.js <URL_OBJETIVO> <TIEMPO> <TASA_PAQUETES> <HILOS> <ARCHIVO_PROXIES>
 ```
-<URL_OBJETIVO>: La URL del sitio web que quieres poner a prueba (ej., https://objetivo.com). 🎯
+**<URL_OBJETIVO>:** La URL del sitio web que quieres poner a prueba (ej., https://objetivo.com). 🎯
 
-<TIEMPO>: La duración del ataque en segundos (¡sé preciso!). ⏳
+**<TIEMPO>:** La duración del ataque en segundos (¡sé preciso!). ⏳
 
-<TASA_PAQUETES>: El número de paquetes HTTP/2 que cada hilo enviará por segundo. 🚀
+**<TASA_PAQUETES>:** El número de paquetes HTTP/2 que cada hilo enviará por segundo. 🚀
 
-<HILOS>: El número de hilos (procesos) que se ejecutarán en paralelo. 🧵
+**<HILOS>:** El número de hilos (procesos) que se ejecutarán en paralelo. 🧵
 
-<ARCHIVO_PROXIES>: La ruta al archivo de texto que contiene la lista de proxies que usarás para anonimizar tu ataque. 🛡️
+**<ARCHIVO_PROXIES>:** La ruta al archivo de texto que contiene la lista de proxies que usarás para anonimizar tu ataque. 🛡️
 
 
 ***Ejemplo:***
@@ -74,7 +80,7 @@ node joker.js https://ejemplo.com 60 5000 100 proxies.txt
   Esto iniciará un ataque DDoS al sitio web https://ejemplo.com durante 60 segundos, utilizando 100 hilos y enviando 5000 paquetes por segundo, a través de los proxies listados en proxies.txt.*
   
 
-##💀 ¡Aviso Importante Sobre Los Proxies! 💀
+## 💀 ¡Aviso Importante Sobre Los Proxies! 💀
 ¡La calidad importa! Utiliza proxies Elite, Anonimos
 
 Formato estricto: Cada línea en el archivo proxies.txt debe seguir el formato ip:puerto (ej., 127.0.0.1:8080).
