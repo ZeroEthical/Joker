@@ -11,85 +11,78 @@
     <a href="LICENSE"><img align="center" src="https://img.shields.io/github/license/ZeroEthical/Joker?style=flat-square" alt="GitHub License"></a>
 </div>
 
-## 💥 ¡Advertencia! 💥
+## 💀 ¡Advertencia! 💀
 
-**Este código se proporciona SÓLO con fines educativos y de pruebas de seguridad. El uso de este código para atacar sistemas sin autorización es ILEGAL y ÉTICAMENTE INACEPTABLE. El autor no se hace responsable de ningún uso indebido.**
+**Esta herramienta está diseñada EXCLUSIVAMENTE para pruebas de estrés y evaluación de seguridad. No asumo NINGUNA responsabilidad por el uso malintencionado de este código. ¡Úsalo bajo tu propio riesgo y responsabilidad!**
 
-## 🎭 Descripción General
+## 🎯 Descripción General
 
-**Joker** es una herramienta de pruebas de estrés (DDoS) avanzada, diseñada para evaluar la resiliencia de sistemas y redes ante ataques de denegación de servicio. Está escrita en **Node.js** y es una herramienta poderosa, ideal para equipos de seguridad, investigadores y desarrolladores que buscan comprender y mitigar los riesgos asociados con los ataques DDoS.
+**Joker** es un sofisticado script de pruebas de estrés HTTP/2 escrito en Node.js, creado para simular ataques de denegación de servicio distribuido (DDoS). Está diseñado para proporcionar a los equipos de seguridad, investigadores y profesionales de la ciberseguridad una herramienta robusta para evaluar la resiliencia de sus sistemas y redes. Joker es ideal para comprender las vulnerabilidades de un sistema ante ataques de alto volumen y para refinar las estrategias de mitigación.
 
 **Características Clave:**
 
-*   **Multi-Threading:** Emplea múltiples hilos para generar un alto volumen de tráfico. 🧵
-*   **Proxy Support:** Utiliza una lista de proxies para anonimizar el origen de los ataques (¡con precaución!). 🛡️
-*   **Header Spoofing:** Permite personalizar los encabezados HTTP para simular tráfico real y evadir defensas. 😈
-*   **HTTP/2 Support:** Se integra con el protocolo HTTP/2 para maximizar la efectividad del ataque. 📶
-*   **Cluster Mode:** Usa múltiples procesos para amplificar el poder del ataque. 👯
-*   **User-Agent Randomization:** Rota entre diferentes User-Agents para evitar la identificación del cliente atacante. 🤖
-*   **Título de la página de destino:** Muestra el título de la página web de destino y código de estado para validar el ataque. 📰
-*   **Diversidad de Métodos:** Incluye varios métodos de ataque, como GET, POST, HEAD, y más. 🧰
-*   **Estado del ataque:** Obtenga el título del sitio atacado en tiempo real
+*   **Protocolo HTTP/2:** Aprovecha las capacidades de HTTP/2 para generar un tráfico más eficiente e intenso. 📶
+*   **Proxy Anonymization:** Capaz de utilizar listas de proxies para ofuscar el origen del tráfico malicioso, haciendo que la atribución sea más difícil. 🛡️
+*   **Multi-Threading:** Utiliza múltiples hilos para amplificar el poder del ataque, generando un volumen masivo de solicitudes. 🧵
+*   **Header Spoofing:** Personalización completa de los encabezados HTTP para simular tráfico diverso y evadir defensas. 😈
+*   **User-Agent Rotation:** Cambia los User-Agents en cada solicitud para evitar la detección basada en la firma del cliente. 🤖
+*   **Cluster Mode:** Ejecuta múltiples procesos para aumentar significativamente el volumen total de tráfico generado. 👯
+*   **Monitorización en tiempo real:** Permite monitorear las conexiones. 📈
 
-## ⚙️ Instalación
+## 🛠️ Instalación
 
-1.  **Clonar el repositorio:**
+1.  **Clonar el Repositorio:**
 
     ```bash
-    git clone https://github.com/TU_USUARIO/Joker.git
+    git clone https://github.com/ZeroEthical/Joker.git
     cd Joker
     ```
-2.  **Instalar las dependencias:**
+
+2.  **Instalar Dependencias (¡prepárate, esto es importante!):**
 
     ```bash
-    npm install axios
-    npm install net
-    npm install http2
-    npm install tls
-    npm install cluster
-    npm install url
-    npm install path
-    npm install crypto
-    npm install user-agents
-    npm install fs
-    npm install https
+    npm install axios net http2 tls cluster url path crypto user-agents fs https zlib
     ```
-3.  **Asegúrate de tener Node.js instalado (versión 16 o superior).**
 
-## 📝 Uso
+    ⚠️ **¡Asegúrate de instalar TODAS las dependencias!** ⚠️
+
+## 🔪 Uso (¡Manos a la obra!)
+
+La sintaxis es simple, pero el potencial es ENORME:
 
 ```bash
-node joker.js [ip] [tiempo] [velocidad] [threads] [archivo_proxies]
+node joker.js <URL_OBJETIVO> <TIEMPO> <TASA_PAQUETES> <HILOS> <ARCHIVO_PROXIES>
 ```
+<URL_OBJETIVO>: La URL del sitio web que quieres poner a prueba (ej., https://objetivo.com). 🎯
 
-**Parámetros:**
+<TIEMPO>: La duración del ataque en segundos (¡sé preciso!). ⏳
 
-*  [ip]: La dirección URL del sitio web de destino (ej., https://ejemplo.com). 🎯
+<TASA_PAQUETES>: El número de paquetes HTTP/2 que cada hilo enviará por segundo. 🚀
 
-*  [tiempo]: La duración del ataque en segundos. ⏳
+<HILOS>: El número de hilos (procesos) que se ejecutarán en paralelo. 🧵
 
-*  [velocidad]: Cantidad de paquetes por segundo (Rate). 🚀
+<ARCHIVO_PROXIES>: La ruta al archivo de texto que contiene la lista de proxies que usarás para anonimizar tu ataque. 🛡️
 
-*  [threads]: El número de hilos a utilizar. 🧵
-
-*  [archivo_proxies]: La ruta al archivo de texto que contiene una lista de proxies. 🛡️
 
 ***Ejemplo:***
 
 ```
 node joker.js https://ejemplo.com 60 5000 100 proxies.txt
 ```
-  Esto iniciará un ataque DDoS al sitio web https://ejemplo.com durante 60 segundos, utilizando 100 hilos y enviando 5000 paquetes por segundo, a través de los proxies listados en proxies.txt.
 
-## ⚠️ Importante sobre el archivo de proxies ⚠️
+*Este comando lanzará un ataque HTTP/2 DDoS sobre https://objetivo.com, usando 100 hilos, enviando 5000 peticiones por segundo cada uno, durante un tiempo de 60 segundos, a través de los proxies en proxies.txt.
+  Esto iniciará un ataque DDoS al sitio web https://ejemplo.com durante 60 segundos, utilizando 100 hilos y enviando 5000 paquetes por segundo, a través de los proxies listados en proxies.txt.*
+  
 
-*  El archivo proxies.txt debe contener una lista de proxies, uno por línea, en el formato ip:puerto.
+##💀 ¡Aviso Importante Sobre Los Proxies! 💀
+¡La calidad importa! Utiliza proxies Elite, Anonimos
 
-*  Utiliza proxies anónimos y de alta calidad para evitar revelar tu dirección IP real y maximizar la efectividad del ataque.
+Formato estricto: Cada línea en el archivo proxies.txt debe seguir el formato ip:puerto (ej., 127.0.0.1:8080).
 
-*  Advertencia: El uso de proxies puede implicar riesgos legales y de privacidad. Utiliza esta función con precaución.
+Responsabilidad: El uso de proxies no te hace inmune. La trazabilidad es un juego del gato y el ratón.
+Importante:
 
-## 🛡️ Limitaciones de responsabilidad
+Asegúrese que las "url" en los "proxies.txt" sean las correctas para una mayor efectividad.
   El uso de este software es **bajo su propio riesgo**. El autor no se hace responsable de:
 
 *  Cualquier daño causado a sistemas o redes atacadas.
@@ -98,21 +91,27 @@ node joker.js https://ejemplo.com 60 5000 100 proxies.txt
 
 *  La efectividad del ataque, que puede variar según la infraestructura del objetivo y las defensas implementadas.
 
-## ✨ Próximas Mejoras (¡Contribuciones Bienvenidas!) ✨
-*  **Integración de más métodos de ataque:** Ampliar el arsenal con SYN Flood, UDP Flood, etc. 💣
+##  ⚠️ Exención de Responsabilidad
+Este software se proporciona "tal cual" sin ninguna garantía expresa o implícita. Al utilizar este software, asumes TODA la responsabilidad por cualquier consecuencia que pueda surgir, incluyendo, pero no limitándose a:
 
-*  **Soporte para protocolos SOCKS4 y SOCKS5:** Más opciones para el anonimato. 🧅
+Daños a sistemas, redes o datos.
 
-*  **Interfaz de usuario:** Para una experiencia más amigable. 💻
+Responsabilidad legal por violar las leyes locales, nacionales o internacionales.
 
-*  **Configuración avanzada:** Permitir una mayor personalización de los parámetros del ataque. ⚙️
+Interrupciones del servicio, pérdida de ingresos o cualquier otro daño financiero.
 
-*  **Interfaz GUI:** Interfaz Gráfica intuitiva para gestionar los ataques más facilmente
+***¡El autor no asume responsabilidad alguna por el uso que le des a esta herramienta!***
 
+## 🔧 Próximas Características (y Cómo Ayudar a Destruir Cosas Mejores 😉)
+*  ***Métodos de ataque ampliados:*** SYN Flood, UDP Flood, HTTP Raw Data, Slowloris.
 
-## 🤝 Contribuciones
-***¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar Joker, siéntete libre de crear un "pull request".***
+*  ***Soporte para más protocolos de proxy:*** SOCKS4, SOCKS5.
 
+*  ***Integración con herramientas de resolución de Cloudflare:*** [FILTRADO]
+
+*  ***Intensificación de hilos e IP rotatorio.***
+
+*  ***Interfaz Gráfica de Usuario para gestionar los ataques de forma más directa***
 ## 📝 Licencia
 *  ***Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para obtener más detalles.***
 
