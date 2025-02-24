@@ -118,6 +118,24 @@ Interrupciones del servicio, pérdida de ingresos o cualquier otro daño financi
 *  ***Intensificación de hilos e IP rotatorio.***
 
 *  ***Interfaz Gráfica de Usuario para gestionar los ataques de forma más directa***
+
+## Contribuciones
+Si tienes ideas para mejor este código, con gusto puedes contribuir. 😈
+
+
+# 🔥Owner And Credit
+<details>
+<summary><b>ᴄʀᴇᴅɪᴛ</b></summary>
+<br>
+
+<h3 align="center">
+   ᴄʀᴇᴅɪᴛs 
+## sᴘᴇᴄɪᴀʟ ᴄʀᴇᴅɪᴛ
+
+- [ZeroEthical](https://t.me/ZeroEthical)
+</details>
+
+
 ## 📝 Licencia
 *  ***Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para obtener más detalles.***
 
@@ -126,4 +144,18 @@ Interrupciones del servicio, pérdida de ingresos o cualquier otro daño financi
 
 **🪙 BTC:** 1P9vFv4oWvz3Lp75QiBXWNtSudZ1FnBZNG 
 
-**TELEGRAM: @ZeroEthical**
+
+</h3>
+
+<p align="center">
+<a href="https://github.com/ZeroEthical"> <img src="https://img.shields.io/badge/ZeroEthical-black?style=for-the-badge&logo=github" alt="ZeroEthical" /> </a>
+</p>
+
+<h3 align="center">──「 ʀᴇᴘᴏ sᴛᴀᴛs 」──</h3>
+
+<h2 align="center">
+    <a href="https://github.com/ZeroEthical/Joker"><img src="https://github-readme-stats.vercel.app/api/pin/?username=ZeroEthical&repo=Joker&theme=chartreuse-dark"></a>
+    </h2>
+
+
+
